@@ -11,7 +11,7 @@ function App() {
       <main>
         <div className="jumbotron text-center">
           <img src="/Logo.webp"></img>
-          <h1>Desafio Técnico Estágio</h1>
+          <h1>Desafio Técnico Idata</h1>
           <p>Tabela COMEX</p>
         </div>
         <div className="tabela">

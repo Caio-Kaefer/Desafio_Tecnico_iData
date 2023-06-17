@@ -185,7 +185,9 @@ const styles = {
     textAlign: 'center', 
   },
 
-
+  input: {
+    background: '#bdb6af'
+  },
   submitButton: {
     padding: '10px 20px',
     background: '#f69231',
