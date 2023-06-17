@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200&display=swap");
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -10,8 +12,30 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  background-color: #ffffff;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.jumbotron {
+  margin-bottom: 20px;
+}
+
+.tabela{
+  margin-bottom: 20px;
+}
+
+
+.PostForm {
+  margin-bottom: 20px;
+  justify-content: left;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -24,14 +48,22 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  font-family: "MuseoModerno", cursive;
+  height: 100%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+main {
+  height: 100%;
+}
+
+.header {
+  background-color: #ffffff;
+  height: 20vh;
+  width: 100%;
+  font-size: 5vw;
 }
 
 button {
@@ -51,6 +83,18 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.ag-theme-alpine {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .ag-theme-alpine {
+    overflow-x: auto;
+    margin: 20px;
+  }
 }
 
 @media (prefers-color-scheme: light) {
