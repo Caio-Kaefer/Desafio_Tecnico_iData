@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200&display=swap");
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -10,6 +12,47 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  ;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.jumbotron {
+  margin-bottom: 20px;
+  
+}
+
+.jumbotron > h1{
+  color: #f69231;
+}
+
+.tabela{
+  margin-bottom: 20px;
+}
+
+
+.PostForm {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+input, textarea{
+  background-color: #bdb6af;
+  border-style: none;
+  border-radius: 7px;
+}
+
+#postForm{
+  justify-self: left;
 }
 
 a {
@@ -24,14 +67,21 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  font-family: "MuseoModerno", cursive;
+  height: 100%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+main {
+  height: 100%;
+}
+
+.header {
+  background-color: #ffffff;
+  height: 20vh;
+  width: 100%;
+  font-size: 5vw;
 }
 
 button {
@@ -51,6 +101,21 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.ag-theme-alpine {
+  height: 600px;
+  width: 1500px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .ag-theme-alpine {
+    overflow-x: auto;
+    margin: 20px;
+    width: 400px; ;
+  }
 }
 
 @media (prefers-color-scheme: light) {
