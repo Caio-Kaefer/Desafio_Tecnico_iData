@@ -29,13 +29,17 @@ const FormularioPostAPI = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    window.location.reload();
+    
+    // window.location.reload();
     
 
     try {
       const response = await axios.post('https://portal.comex360.idata.com.br:8789/process', dadosFormulario);
       console.log(response.data); // Tratar a resposta da API como desejado
-      console.log(response.status);
+      if(response.status == 200){
+        dialog('informações adicionadas com sucesso');
+        window.location.reload();
+      }
     } catch (error) {
       console.error(error);
     }

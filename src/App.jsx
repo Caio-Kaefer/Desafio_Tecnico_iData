@@ -22,12 +22,12 @@ function App() {
           <h2>Utilize o formulário abaixo para inserir Dados</h2>
           <FormularioPostAPI></FormularioPostAPI>
         </div>
-        <div class="footer-basic">
+        <div className="footer-basic">
         <footer>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="https://idata.com.br">iDATA Software</a></li>
+            <ul className="list-inline">
+                <li className="list-inline-item"><a href="https://idata.com.br">iDATA Software</a></li>
             </ul>
-            <p class="copyright">Caio Kaefer de Azambuja © 2023</p>
+            <p className="copyright">Caio Kaefer de Azambuja © 2023</p>
         </footer>
     </div>
       </main>
