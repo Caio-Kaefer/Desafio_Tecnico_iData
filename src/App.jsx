@@ -4,6 +4,7 @@ import "./App.css";
 import Table from "./table";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FormularioPostAPI from "./PostForm";
+import "./footer.css";
 
 function App() {
   return (
@@ -21,6 +22,14 @@ function App() {
           <h2>Utilize o formulário abaixo para inserir Dados</h2>
           <FormularioPostAPI></FormularioPostAPI>
         </div>
+        <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://idata.com.br">iDATA Software</a></li>
+            </ul>
+            <p class="copyright">Caio Kaefer de Azambuja © 2023</p>
+        </footer>
+    </div>
       </main>
     </>
   );
